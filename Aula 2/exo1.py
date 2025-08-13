@@ -1,5 +1,4 @@
 def fazer_pedido():
-    x = 0
     sabores = ["Mussarela","Pepperoni","Quatro Queijos","Calabresa","Frango com Catupiry","Chocolate","Romeu e Julieta"]
     saboresEscolhidos = []
     pedido = input("Escolha um sabor ou digite 'sair' para sair:")
@@ -8,9 +7,9 @@ def fazer_pedido():
             saboresEscolhidos.append(pedido)
             print(f"Pizza de {pedido} adicionada.")
         else:
-            print("erro")
+            print("Tente outra vez.")
         pedido = input("Escolha um sabor ou digite 'sair' para sair:")
-    print("vc saiu :P")
+    print("Pedido finalizado.")
     print(f"Seus sabores são:{saboresEscolhidos}")
 
 fazer_pedido()
