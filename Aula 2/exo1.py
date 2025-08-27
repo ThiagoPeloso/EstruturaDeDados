@@ -1,7 +1,8 @@
 def fazer_pedido():
-    sabores = ["Mussarela","Pepperoni","Quatro Queijos","Calabresa","Frango com Catupiry","Chocolate","Romeu e Julieta"]
+    sabores = ["mussarela","pepperoni","quatro queijos","calabresa","frango com catupiry","chocolate","romeu e julieta"]
     saboresEscolhidos = []
     pedido = input("Escolha um sabor ou digite 'sair' para sair:")
+    pedido = pedido.lower()
     while pedido != "sair":
         if pedido in sabores:
             saboresEscolhidos.append(pedido)
