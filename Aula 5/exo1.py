@@ -14,7 +14,7 @@ def fazer_pedido():
         if pedido.lower() == "sair":
             break
         elif pedido.lower() in cardapio:
-            escolhas.append(pedido)
+            escolhas.append(pedido.lower())
             print(f"Pizza de {pedido} adicionada.")
 
     total = 0
