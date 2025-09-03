@@ -16,8 +16,16 @@ def fazer_pedido():
         elif pedido.lower() in cardapio:
             escolhas.append(pedido)
             print(f"Pizza de {pedido} adicionada.")
+
     total = 0
-    for sabor in pedido:
-        total += cardapio[escolhas]
+    for pedido in escolhas:
+        total += cardapio[pedido]
+
+    print("Resumo da Ópera:")
+    if pedido:
+        
+        for pedido in escolhas:
+            print(f"{}. {pedido}: R$ {cardapio[pedido]:.2f}")
+        print(f"Total a pagar: R${total:.2f}")
 
 fazer_pedido()
