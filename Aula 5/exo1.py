@@ -23,9 +23,10 @@ def fazer_pedido():
 
     print("Resumo da Ópera:")
     if pedido:
-        
+        x = 1
         for pedido in escolhas:
-            print(f"{}. {pedido}: R$ {cardapio[pedido]:.2f}")
+            print(f"{x}. {pedido}: R$ {cardapio[pedido]:.2f}")
+            x+=1
         print(f"Total a pagar: R${total:.2f}")
 
 fazer_pedido()
